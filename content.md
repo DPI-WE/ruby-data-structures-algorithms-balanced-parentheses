@@ -1,4 +1,4 @@
-# Balanced Parentheses
+# Balanced Parentheses ⚖️
 
 ## The problem
 Write a program that:
