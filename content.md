@@ -11,13 +11,13 @@ Write a program that:
 Let's start with an example to warm up.
 
 - Which of these strings are valid according to the problem's definition?
-- "()"
+- `()`
   - Correct, each open bracket is closed by the same type of bracket in the correct order.
-- "([)]"
+- `([)]`
   - Not quite. Even though each bracket type is matched, they are not closed in the correct order.
-- "(]"
+- `(]`
   - No, the types of brackets do not match.
-- "[(){}]"
+- `[(){}]`
   - Correct, each open bracket is closed by the same type of bracket.
 {: .choose_all #valid_strings title="Which of these strings are valid according to the problem's definition?" points="2" answer="[1, 4]" }
 
@@ -47,25 +47,25 @@ puts is_valid(string)
 
 ```ruby
 describe "Balanced Parentheses" do
-  it "returns true for '()[]{}'" do
+  it "returns true for `()[]{}`" do
     expect(is_valid("()[]{}")).to eq(true)
   end
 end
 ```
-{: .repl-test #balanced_parentheses_test_1 for="balanced_parentheses" title="Balanced Parentheses returns true for '()[]{}'" points="1"}
+{: .repl-test #balanced_parentheses_test_1 for="balanced_parentheses" title="Balanced Parentheses returns true for `()[]{}`" points="1"}
 
 ```ruby
 describe "Balanced Parentheses" do
-  it "returns false for '([)]'" do
+  it "returns false for `([)]`" do
     expect(is_valid("([)]")).to eq(false)
   end
 end
 ```
-{: .repl-test #balanced_parentheses_test_2 for="balanced_parentheses" title="Balanced Parentheses returns false for '([)]'" points="1"}
+{: .repl-test #balanced_parentheses_test_2 for="balanced_parentheses" title="Balanced Parentheses returns false for `([)]`" points="1"}
 
 ```ruby
 describe "Balanced Parentheses" do
-  it "returns true for '{[]}'" do
+  it "returns true for `{[]}`" do
     expect(is_valid("{[]}")).to eq(true)
   end
 end
