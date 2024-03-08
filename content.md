@@ -52,7 +52,7 @@ describe "Balanced Parentheses" do
   end
 end
 ```
-{: .repl-test #balanced_parentheses_test_1 for="balanced_parentheses" title="Balanced Parentheses returns true for `()[]{}`" points="1"}
+{: .repl-test #balanced_parentheses_test_1 for="balanced_parentheses" title="Balanced Parentheses returns true for `()[]{\}`" points="1"}
 
 ```ruby
 describe "Balanced Parentheses" do
@@ -70,7 +70,7 @@ describe "Balanced Parentheses" do
   end
 end
 ```
-{: .repl-test #balanced_parentheses_test_3 for="balanced_parentheses" title="Balanced Parentheses returns true for '{[]}'" points="1"}
+{: .repl-test #balanced_parentheses_test_3 for="balanced_parentheses" title="Balanced Parentheses returns true for `{[]\}`" points="1"}
 
 ## Tips and Clues for Solving the Problem
 - **Stack**: The key to solving this problem efficiently is using a [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)). Every time an *open* bracket is encountered, push it onto the stack. For every closing bracket, check if the stack's top matches (is the corresponding open bracket). If it does, pop from the stack; if not, the string is invalid.
