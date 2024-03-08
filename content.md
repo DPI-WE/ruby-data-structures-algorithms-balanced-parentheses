@@ -115,3 +115,4 @@ This lesson introduced you to the challenge of determining if a string of bracke
 
 ## References
 - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+- [leetcode](https://leetcode.com/problems/valid-parentheses)
