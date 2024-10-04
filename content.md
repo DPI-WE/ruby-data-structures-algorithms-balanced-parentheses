@@ -1,5 +1,11 @@
 # Balanced Parentheses ⚖️
 
+<div class="alert alert-primary mt-2">
+
+  [video](https://youtu.be/pGm11wf0jHg)
+
+</div>
+
 ## The problem
 Write a program that:
 - Takes an input string containing just the characters `(`, `)`, `{`, `}`, `[` and `]`.
